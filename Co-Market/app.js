@@ -29,7 +29,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(cookieParser());
 app.use(session({
-    secret:"1barssecret01230124",
+    secret:"**************************",
     resave:false,
     saveUninitialized:false
 }));
