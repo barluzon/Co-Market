@@ -13,6 +13,7 @@ router.use(function(req, res, next) {
   next();
 });
 
+
 router.use("/", require("./home"));
 router.use("/products", require("./product"));
 

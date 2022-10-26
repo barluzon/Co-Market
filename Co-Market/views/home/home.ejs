@@ -1,14 +1,26 @@
 <%- include ('../_partial/_header'); %>
 
+
+<head>
+    <link rel="stylesheet" href="./cart_style.css" type="text/css">
+    <script src="./cartjs/modernizr.js" async></script> <!-- Modernizr -->
+
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+
+    <title>Side Cart</title>
+</head>
+
+<body class="foo">
+
 <section class="container-fluid">
 
     <div class="container">
         <div class="row">
             <div class="col2">
                 <h2>           </h2>
-                <h1>Give your Workout<br/> A new Style!</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>Possimu veniam dolorem quasi ut tenetur ducimus!</p>
-                <a class="btn" href="#">Explore Now &#8594;</a>
+                <h1>!מגיע לך לקנות חכם</h1>
+                <p>!אצלנו תוכל גם להשוות מחירים וגם להרכיב את הסל הזול ביותר<br></p>
             </div>
             <div class="col2"> <img src="images/image1.png" alt="" srcset=""> </div>
         </div>
@@ -20,38 +32,36 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/searchbox.css" type="text/css"/>
 
-
-
 </head>
-<div class="container h-100">
-    <div class="d-flex justify-content-center h-100">
-        <div class="searchbar">
-            <input class="search_input" type="text" name="" placeholder="Search...">
-            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-        </div>
-    </div>
-</div>
 
+
+<form action="" class="search-bar">
+    <input type="search" name="search" pattern=".*\S.*" required dir="rtl">
+    <button class="search-btn" type="submit">
+        <span>חיפוש...</span>
+    </button>
+</form>
 <!----- category product section start------>
 <section class="categories">
 
     <div class="small_container">
-        <div class="row">
-            <div class="col-sm-1"> <img src="images/baby.png" alt=""/> </div>
-            <div class="col-sm-1"> <img src="images/bread.png" alt=""/> </div>
-            <div class="col-sm-1"> <img src="images/clean.png" alt=""/> </div>
-            <div class="col-sm-1"> <img src="images/cook.png" alt=""/> </div>
-            <div class="col-xs-1"> <img src="images/diary.png" alt=""/> </div>
-            <div class="col-sm-1"> <img src="images/drinks.png" alt=""/> </div>
-            <div class="col-sm-1"> <img src="images/frozen.png" alt=""/> </div>
-            <div class="col-sm-1"> <img src="images/fruits.png" alt=""/> </div>
-            <div class="col-sm-1"> <img src="images/health.png" alt=""/> </div>
-            <div class="col-sm-1"> <img src="images/home.png" alt=""/> </div>
-            <div class="col-sm-1"> <img src="images/meat.png" alt=""/> </div>
-            <div class="col-sm-1"> <img src="images/pasta.png" alt=""/> </div>
-            <div class="col-sm-1"> <img src="images/salad.png" alt=""/> </div>
-            <div class="col-sm-1"> <img src="images/sauce.png" alt=""/> </div>
-            <div class="col-sm-1"> <img src="images/snacks.png" alt=""/> </div>
+        <div class="row"  id="cat-img">
+
+            <div class="col-sm-1"> <a href="/baby"> <img src="images/baby.png" alt=""/> </a></div>
+            <div class="col-sm-1"> <a href="/bread"><img src="images/bread.png" alt=""/></a> </div>
+            <div class="col-sm-1"><a href="/clean"> <img src="images/clean.png" alt=""/></a> </div>
+            <div class="col-sm-1"> <a href="/cook"><img src="images/cook.png" alt=""/></a> </div>
+            <div class="col-sm-1"><a href="/diary"> <img src="images/diary.png" alt=""/></a> </div>
+            <div class="col-sm-1"> <a href="/drinks"><img src="images/drinks.png" alt=""/> </a></div>
+            <div class="col-sm-1"> <a href="/frozen"><img src="images/frozen.png" alt=""/></a> </div>
+            <div class="col-sm-1"><a href="/fruits"> <img src="images/fruits.png" alt=""/></a> </div>
+            <div class="col-sm-1"><a href="/health"> <img src="images/health.png" alt=""/></a> </div>
+            <div class="col-sm-1"> <a href="/forhome"><img src="images/forhome.png" alt=""/></a> </div>
+            <div class="col-sm-1"><a href="/meat"> <img src="images/meat.png" alt=""/> </a></div>
+            <div class="col-sm-1"> <a href="/pasta"><img src="images/pasta.png" alt=""/> </a></div>
+            <div class="col-sm-1"><a href="/salad"> <img src="images/salad.png" alt=""/> </a></div>
+            <div class="col-sm-1"> <a href="/sauce"><img src="images/sauce.png" alt=""/></a> </div>
+            <div class="col-sm-1"><a href="/snacks"> <img src="images/snacks.png" alt=""/></a> </div>
 
         </div>
     </div>
@@ -61,130 +71,44 @@
 
 <!----- featured product section start------>
 <div class="small_container">
-    <h2 class="title">Featured Product</h2>
+    <br><br>
+    <!-- Modal -->
+<!--    <div class="modal-wrapper">-->
+<!--        <div class="modal">-->
+<!--            <div class="head">-->
+<!--                <a class="btn-close compare-title" href="#"> יציאה-->
+<!--                    <i class="fa fa-times" aria-hidden="true"></i>-->
+<!--                </a>-->
+
+<!--            </div>-->
+<!--            <div class="content">-->
+<!--                <div class="good-job">-->
+<!--                    <h1>Good Job!-->
+
+<!--                        <%= data.branches %>-->
+
+<!--                    </h1>-->
+<!--                    </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <h2 class="title">מוצרים פופולריים</h2>
     <div class="row">
-        <div class="col4">
-            <img src="images/buy-1.jpg" alt=""/>
-            <h4>RED Printed T-shirt</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> </div>
-            <P>$50.00</P>
-        </div>
-        <div class="col4">
-            <img src="images/buy-2.jpg" alt=""/>
-            <h4>Blue Modern Shoe</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> </div>
-            <P>$40.00</P>
-        </div>
-        <div class="col4">
-            <img src="images/buy-3.jpg" alt=""/>
-            <h4>Black Printed Pant</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star-half-alt"></i> <i class="far fa-star"></i> </div>
-            <P>$60.00</P>
-        </div>
-        <div class="col4">
-            <img src="images/buy-4.jpg"/>
-            <h4>Black printed T-shirt</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> </div>
-            <P>$30.00</P>
-        </div>
+        <%- data.products %>
+
     </div>
 </div>
-<!----- featured product section end------>
 
-<!----- latest product section start------>
-<div class="small_container">
-    <h2 class="title">latest Product</h2>
-    <div class="row">
-        <div class="col4">
-            <img src="images/product-5.jpg"/>
-            <h4>RED Printed T-shirt</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> </div>
-            <P>$50.00</P>
-        </div>
-        <div class="col4">
-            <img src="images/product-6.jpg"/>
-            <h4>Blue Modern Shoe</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> </div>
-            <P>$40.00</P>
-        </div>
-        <div class="col4">
-            <img src="images/product-7.jpg"/>
-            <h4>Black Printed Pant</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star-half-alt"></i> <i class="far fa-star"></i> </div>
-            <P>$60.00</P>
-        </div>
-        <div class="col4">
-            <img src="images/product-8.jpg"/>
-            <h4>Black printed T-shirt</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> </div>
-            <P>$30.00</P>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col4">
-            <img src="images/product-9.jpg"/>
-            <h4>RED Printed T-shirt</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> </div>
-            <P>$50.00</P>
-        </div>
-        <div class="col4">
-            <img src="images/product-10.jpg"/>
-            <h4>Blue Modern Shoe</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> </div>
-            <P>$40.00</P>
-        </div>
-        <div class="col4">
-            <img src="images/product-11.jpg"/>
-            <h4>Black Printed Pant</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star-half-alt"></i> <i class="far fa-star"></i> </div>
-            <P>$60.00</P>
-        </div>
-        <div class="col4">
-            <img src="images/product-12.jpg"/>
-            <h4>Black printed T-shirt</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> </div>
-            <P>$30.00</P>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col4">
-            <img src="images/buy-1.jpg"/>
-            <h4>RED Printed T-shirt</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> </div>
-            <P>$50.00</P>
-        </div>
-        <div class="col4">
-            <img src="images/buy-2.jpg"/>
-            <h4>Blue Modern Shoe</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> </div>
-            <P>$40.00</P>
-        </div>
-        <div class="col4">
-            <img src="images/buy-3.jpg"/>
-            <h4>Black Printed Pant</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star-half-alt"></i> <i class="far fa-star"></i> </div>
-            <P>$60.00</P>
-        </div>
-        <div class="col4">
-            <img src="images/buy-4.jpg"/>
-            <h4>Black printed T-shirt</h4>
-            <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> </div>
-            <P>$30.00</P>
-        </div>
-    </div>
-</div>
-<!----- latest product section end------>
-
-<!----- offer product section start------>
 <section class="offer">
     <div class="small_container">
         <div class="row">
             <div class="col2"> <img src="images/exclusive.png" alt="" class="offer_img"> </div>
             <div class="col2">
-                <p>Exclusive Aailable On Here</p>
-                <h1 id="band">Smart Band 4</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis doloremque eum adipisci dolor, nam aut.</p>
-                <a href="#" class="btn">Buy Now &#8594;</a>
+                <p></p>
+                <h1 id="band">!קונים חכם</h1>
+                <p>השינוי מתחיל אצלנו</p>
+                <a href="#" class="go-up">!קנו עכשיו &#8594;</a>
             </div>
         </div>
     </div>
@@ -195,27 +119,27 @@
 <section class="testimonial">
     <div class="small_container">
         <div class="row">
+<!--            <div class="col3">-->
+<!--                <i class="fa fa-quote-left"></i>-->
+<!--                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit exercitationem beatae explicabo quo ullam, dolores sit deserunt unde corrupti, reiciendis illo minima, eos tenetur! Amet.</p>-->
+<!--                <div class="center"> <div class="buttons d-flex flex-row"> <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button px-5"><span class="dot">1</span>Add to cart </button> </div> </div>-->
+<!--                <img src="images/user-1.png">-->
+<!--                <h3>Sean Sarkar</h3>-->
+<!--            </div>-->
             <div class="col3">
                 <i class="fa fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit exercitationem beatae explicabo quo ullam, dolores sit deserunt unde corrupti, reiciendis illo minima, eos tenetur! Amet.</p>
-                <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> </div>
-                <img src="images/user-1.png">
-                <h3>Sean Sarkar</h3>
-            </div>
-            <div class="col3">
-                <i class="fa fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit exercitationem beatae explicabo quo ullam, dolores sit deserunt unde corrupti, reiciendis illo minima, eos tenetur! Amet.</p>
-                <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> </div>
+                <h3>מהפכת הקניות החדשה בישראל!</h3>
+<!--                <div class="center"> <div class="buttons d-flex flex-row"> <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button px-5"><span class="dot">1</span>Add to cart </button> </div> </div>-->
                 <img src="images/user-2.png">
-                <h3>Din joe</h3>
+                <h3>Bar Luzon</h3>
             </div>
-            <div class="col3">
-                <i class="fa fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit exercitationem beatae explicabo quo ullam, dolores sit deserunt unde corrupti, reiciendis illo minima, eos tenetur! Amet.</p>
-                <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> </div>
-                <img src="images/user-3.png">
-                <h3>Mike Smith</h3>
-            </div>
+<!--            <div class="col3">-->
+<!--                <i class="fa fa-quote-left"></i>-->
+<!--                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit exercitationem beatae explicabo quo ullam, dolores sit deserunt unde corrupti, reiciendis illo minima, eos tenetur! Amet.</p>-->
+<!--                <div class="center"> <div class="buttons d-flex flex-row"> <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button px-5"><span class="dot">1</span>Add to cart </button> </div> </div>-->
+<!--                <img src="images/user-3.png">-->
+<!--                <h3>Mike Smith</h3>-->
+<!--            </div>-->
         </div>
     </div>
 </section>
@@ -238,6 +162,7 @@
 </section>
 <!----- brands product section end------>
 
-<!----- footer product section start------>
+<script src="./scrapers.js"></script>
 
+<!----- footer product section start------>
 <%- include ('../_partial/_footer'); %>

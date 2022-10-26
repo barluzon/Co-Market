@@ -1,49 +1,3 @@
-<!--<!DOCTYPE html>-->
-
-
-<!--<head>-->
-<!--    <meta charset="utf-8">-->
-<!--    <title>Node Tutorial</title>-->
-<!--    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
-<!--</head>-->
-
-<!--<body>-->
-<!--<div class="navbar navbar-default navbar-static-top" role="navigation">-->
-<!--    <div class="container">-->
-<!--        <div class="navbar-header">-->
-<!--            <a class="navbar-brand" href="/">Node Tutorial</a>-->
-<!--        </div>-->
-<!--        <ul class="nav navbar-nav navbar-right">-->
-<!--            <li><a href="/home">Home</a></li>-->
-<!--            <li><a href="/about">About</a></li>-->
-
-<!--            <% if(currentUser != null) { %>-->
-<!--                <li><a href="/products">My products</a></li>-->
-<!--                <li><a href="#">Welcome <%= currentUser.firstname %>!</a></li>-->
-<!--                <li><a href="/logout">Logout</a></li>-->
-<!--            <%}%>-->
-<!--            <% if(currentUser == null) { %>-->
-<!--            <li><a href="/login">Log In</a></li>-->
-<!--            <li><a href="/signup">Sign Up</a></li>-->
-<!--            <%}%>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--<div class="container">-->
-<!--<%  if(error && error.length > 0) { %>-->
-<!--    <div class="alert alert-danger" role="alert">-->
-<!--        <%= error %>-->
-<!--    </div>-->
-<!--<% } %>-->
-
-<!--<%  if(info && info.length > 0) { %>-->
-<!--    <div class="alert alert-info" role="alert">-->
-<!--        <%= info %>-->
-<!--    </div>-->
-<!--<% } %>-->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,14 +22,14 @@
 
     <div class="container">
         <div class="navbar">
-            <div class="logo"> <img src="images/logo.png" alt="Redstore logo" width="125px"/> </div>
+            <div class="logo"> <img src="images/logo.png" alt="CoMarket logo" width="125px"/> </div>
             <nav>
                 <ul>
                     <li class="active"><a href="/home">Home</a></li>
                     <li><a href="/products">Products</a></li>
                     <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/account">Account</a></li>
+                    <!--<li><a href="/contact">Contact</a></li>-->
+                    <!--<li><a href="/account">Account</a></li>-->
 
                     <% if(currentUser != null) { %>
                         <li><a href="/products">My products</a></li>
@@ -110,38 +64,43 @@
 
 <div id="cd-cart">
     <h2>Cart</h2>
+
     <ul class="cd-cart-items">
-        <li>
-            <span class="cd-qty">1x</span> Product Name
-            <div class="cd-price">$9.99</div>
-            <a href="#0" class="cd-item-remove cd-img-replace">Remove</a>
-        </li>
+<!--        <li class="cart-row">-->
+<!--            <span class="cd-qty">1</span>-->
+<!--            <h7 class="cart-item-title">Product Name</h7>-->
+<!--            <div class="cd-price">₪10.00</div>-->
+<!--            <a href="#0" class="cd-item-remove cd-img-replace">Remove</a>-->
+<!--        </li>-->
 
-        <li>
-            <span class="cd-qty">2x</span> Product Name
-            <div class="cd-price">$19.98</div>
-            <a href="#0" class="cd-item-remove cd-img-replace">Remove</a>
-        </li>
+<!--        <li class="cart-row">-->
+<!--            <span class="cd-qty">2</span>-->
+<!--            <h7 class="cart-item-title">Product Name</h7>-->
+<!--            <div class="cd-price">₪5.00</div>-->
+<!--            <a href="#0" class="cd-item-remove cd-img-replace">Remove</a>-->
+<!--        </li>-->
 
-        <li>
-            <span class="cd-qty">1x</span> Product Name
-            <div class="cd-price">$9.99</div>
-            <a href="#0" class="cd-item-remove cd-img-replace">Remove</a>
-        </li>
+<!--        <li class="cart-row">-->
+<!--            <span class="cd-qty">1</span>-->
+<!--            <h7 class="cart-item-title">Product Name</h7>-->
+
+<!--            <div class="cd-price">₪15.00</div>-->
+<!--            <a href="#0" class="cd-item-remove cd-img-replace">Remove</a>-->
+<!--        </li>-->
     </ul> <!-- cd-cart-items -->
 
     <div class="cd-cart-total">
-        <p>Total <span>$39.96</span></p>
+        <p>Total <span class="cd-cart-total">₪0</span></p>
     </div> <!-- cd-cart-total -->
 
     <a href="#0" class="checkout-btn">Checkout</a>
 
-    <p class="cd-go-to-cart"><a href="#0">Go to cart page</a></p>
+<!--    <p class="cd-go-to-cart"><a href="#0">Go to cart page</a></p>-->
 </div> <!-- cd-cart -->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="cartjs/main.js"></script> <!-- Gem jQuery -->
-<script src="cartjs/cart.js"></script>
+<script src="./cartjs/main.js"></script> <!-- Gem jQuery -->
+<script src="./cartjs/cart.js"></script>
 
 
 

@@ -276,6 +276,8 @@ p{
     color: #fff;
     border-radius: 5px;
 }
+
+
 /* --------all products page end-------- */
 
 
@@ -285,3 +287,6 @@ li.active a{
 
 }
 
+div#cat-img div {
+    display: inline-block;
+}
