@@ -48,4 +48,4 @@ The project will be divided into the following phases:
 ## Conclusion
 The main goal of "Co-Market" project is to make cost-effective purchasing options easily accessible to customers based on their specific needs. By providing real-time price comparison and a unified shopping cart, this project aims to enhance the online grocery shopping experience for users.
 
-![alt text](https://github.com/barluzon/Co-Market/1.jpeg?raw=true)
+https://github.com/barluzon/Co-Market/blob/master/1.jpeg?raw=true
