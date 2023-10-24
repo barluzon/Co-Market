@@ -1,7 +1,7 @@
 # Co-Market - Online Grocery Shopping Project
 
 ## Project Goals
-The Online Grocery Shopping project aims to create a comfortable and convenient environment that enables customers to purchase and compare a variety of food products online, considering different vendors and food chains' prices. The primary objectives of the project are as follows:
+The Online Grocery Shopping - "Co-Market" project aims to create a comfortable and convenient environment that enables customers to purchase and compare a variety of food products online, considering different vendors and food chains' prices. The primary objectives of the project are as follows:
 
 1. **Price Comparison:** Enable users to easily compare prices of their desired products and create the most cost-effective grocery basket.
 
@@ -27,7 +27,7 @@ To achieve the project's goals, the following high-level features and requiremen
 
 4. **Real-Time Sales and Discounts:** Update prices in real-time by gathering information from external sources.
 
-The website will include the following key components:
+The website include the following key components:
 
 - **User Authentication:** Users can sign in as registered users or guests to search for products and add them to the shopping cart.
 - **Payment Page:** After completing the order, customers receive an order number and payment confirmation.
